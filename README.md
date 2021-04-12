@@ -4,7 +4,7 @@
 |   Enrollment No.  |   Name   | GithubId |
 |   --------------  |   ----   | -------- |
 |    IIT2019197  |   JAIDEV DAS | tsukii21 |
-|    IIT2019195  |   DEEPTARSHI BISWAS |  | 
+|    IIT2019195  |   DEEPTARSHI BISWAS | deepuno0201  | 
 
 **Group No-4**
 
