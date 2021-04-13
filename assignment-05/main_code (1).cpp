@@ -30,35 +30,36 @@ using namespace std;
 int main()
 {
     lli t;
-    cout<<"ENTER TOTAL NUMBER OF TEST CASES:"<<endl;
+   cout<<"ENTER TOTAL NUMBER OF TEST CASES:"<<endl;
     cin>>t;
     cout<<"ENTER THE TEST CASES:"<<endl;
     while(t--)
     {
         lli n,k;
-        cout<<"ENTER LENGTH OF ARRAY AND THE VALUE OF K:"<<endl;
+       cout<<"ENTER LENGTH OF ARRAY AND THE VALUE OF K:"<<endl;
         cin>>n>>k;
         lli K=k;
         lli a[n+1];
         lli orr=0;
         cout<<"ENTER ARRAY ELEMENTS:"<<endl;
+        lli maxi=0;
         For(i,1,n+1){cin>>a[i];orr=orr|a[i];}
         if(orr<k)
         {
             cout<<"0"<<endl;continue;
         }
         k=orr;
-        lli** dp=new lli*[n+1];
-        For(i,0,n+1)
-        {
-            dp[i]=new lli[k+1]();
-        }
+        lli dp[n+1][k+1];
+        memset(dp,0,sizeof(dp));
         dp[0][0]=1;
         For(i,1,n+1)
         {
             For(j,0,k+1)
-            {
-                dp[i][j]=dp[i-1][j]+dp[i-1][j^a[i]];
+            {	
+            	if((j^a[i])<=k)
+                	dp[i][j]=dp[i-1][j]+dp[i-1][j^a[i]];
+                else
+                	dp[i][j]=dp[i-1][j];
             }
         }
         cout<<"Answer = "<<dp[n][K]<<endl<<endl;
