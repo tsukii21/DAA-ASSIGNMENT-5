@@ -22,30 +22,7 @@ After cloning, go to ass5 folder and compile and then run the cpp file.
 ```
 #Download project
 git clone https://github.com/tsukii21/DAA-ASSIGNMENT-5.git
-``
-Project Initialize 
 ```
-cd daa
-#create assignment-5 folder
-mkdir assignment_05
-
-#go to assignment-1
-cd assignment_05
-
-#Create file
-touch readme.md
-touch main.cpp
-touch source.tex
-.
-```
----
-
-Run the code
-```
-g++ main.cpp
-./a.out
-```
-
 ---
 
 **Test case**
