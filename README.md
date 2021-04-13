@@ -8,9 +8,9 @@
 
 **Group No-4**
 
-**Faculty Name-**Rahul Kala
+**Faculty Name-** Rahul Kala
 
-**Mentor Name-** "Md. Meraz"
+**Mentor Name-** Md. Meraz
 
 ---
 ## Problem Statement
@@ -21,8 +21,8 @@ Given an array arr[] of n numbers and a number K, find the number of subsets of 
 After cloning, go to ass5 folder and compile and then run the cpp file.
 ```
 #Download project
-git clone https://github.com/merazlab/daa 
-```
+git clone https://github.com/tsukii21/DAA-ASSIGNMENT-5.git
+``
 Project Initialize 
 ```
 cd daa
