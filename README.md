@@ -34,20 +34,18 @@ cd assignment_05
 
 #Create file
 touch readme.md
-touch main.py
-.
+touch main.cpp
+touch source.tex
 .
 ```
 ---
 
 Run the code
 ```
-python main.py
+g++ main.cpp
+./a.out
 ```
-Output
-```
-Curve fitting using Least squares Approximation
-```
+
 ---
 
 **Test case**
