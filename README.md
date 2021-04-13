@@ -3,8 +3,8 @@
 **Team Members**
 |   Enrollment No.  |   Name   | GithubId |
 |   --------------  |   ----   | -------- |
-|    IIT2019197  |   JAIDEV DAS | tsukii21 |
-|    IIT2019195  |   DEEPTARSHI BISWAS | deepuno0201  | 
+|    IIT2019195  |   DEEPTARSHI BISWAS | deepuno0201 |
+|    IIT2019197  |   Jaidev Das | tsukii21  | 
 
 **Group No-4**
 
@@ -31,23 +31,29 @@ Find max
 ```
 Test Case-1
 Input:
-6
-2 4 8 0 2 1
+8 23
+2 4 8 0 2 1 66 78
 Out:
-8
+12
 #--------------------------#
 Test Case-2
 Input:
-6
+6 7
 2 4 8 0 2 1
 Out:
+4
+#--------------------------#
+6 0
+0 0 0 0 0 0
+Out:
 8
-```
-
 ---
 
 ### Theory
-A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
+Here we are using the principle of inclusion and exclusion to to generate the number of subsets  with xor k. We can derieve a linear recurrence as
+f(n,k)=f(n-1,k^a[n])(inclusion)+f(n-1,k)(exclusion).
+Thus our dp relation is dp[i][j]=dp[i-1][j^a[i]]+dp[i-1][j].
+---
 
 ---
 
