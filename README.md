@@ -34,7 +34,7 @@ Input:
 8 23
 2 4 8 0 2 1 66 78
 Out:
-12
+0
 #--------------------------#
 Test Case-2
 Input:
@@ -47,13 +47,13 @@ Out:
 0 0 0 0 0 0
 Out:
 8
+```
 ---
 
 ### Theory
 Here we are using the principle of inclusion and exclusion to to generate the number of subsets  with xor k. We can derieve a linear recurrence as
 f(n,k)=f(n-1,k^a[n])(inclusion)+f(n-1,k)(exclusion).
 Thus our dp relation is dp[i][j]=dp[i-1][j^a[i]]+dp[i-1][j].
----
 
 ---
 
