@@ -1,5 +1,4 @@
-
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 void BellmanFord(int graph[][3], int V, int E,
@@ -40,10 +39,9 @@ int main()
 {
 	int V,E;
   cin>>V>>E;
-	int graph[][3];
-  for(int i=0;i<E;i++){
-    cin>>graph[i][0]<<graph[i][1]<<graph[i][2];
-  }
+	int graph[E][3];
+  for(int i=0;i<E;i++)
+    cin>>graph[i][0]>>graph[i][1]>>graph[i][2];
 
 	BellmanFord(graph, V, E, 0);
 	return 0;
